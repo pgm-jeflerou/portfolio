@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+.container {
+  width: 80rem;
+  margin: 0 auto;
+  color: #1A1D88;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  margin: 15rem 0;
+}
+
+.about {
+  margin: 15rem 0;
+}
+
+h1 {
+  font-size: 3.125rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 0;
+
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+
+}
+
+a {
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text {
+  width: 30rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.card {
+  width: 25rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  background-color: #defafa;
+}
+
+.img-card {
+  width: 19rem;
+  height: 19rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.icon {
+  width: 4rem;
+  margin: .5rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(138, 138, 138, 0.2), 0 2px 3px 0 rgba(138, 138, 138, 0.2);
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: #1A1D88;
+  font-weight: 600;
+  background-color: #CFEBF6;
+}
+
+footer {
+  background-color: #1A1D88;
+  color: #fff;
+  padding: 6rem; 
+}
+
+.small {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
