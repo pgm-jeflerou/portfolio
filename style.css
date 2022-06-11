@@ -1,3 +1,7 @@
+/*
+* element selector
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +9,8 @@
   font-family: 'Montserrat';
 }
 
-.container {
-  width: 80rem;
-  margin: 0 auto;
-  color: #1A1D88;
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -17,14 +19,11 @@ header {
   height: 6rem;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
-.hero {
-  margin: 15rem 0;
-}
-
-.about {
-  margin: 15rem 0;
+main {
+  padding: 0 2rem;
 }
 
 h1 {
@@ -35,7 +34,6 @@ h1 {
 h2 {
   font-size: 2.2rem;
   margin: 0;
-
 }
 
 h3 {
@@ -55,6 +53,65 @@ a {
   font-weight: 600;
 }
 
+button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: #1A1D88;
+  font-weight: 600;
+  background-color: #CFEBF6;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  background-color: #1A1D88;
+  color: #fff;
+  padding: 6rem; 
+}
+
+/*
+* utility classes
+*/
+
+.layout-container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  color: #1A1D88;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-container {
+  width: 12rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*
+* specific styling
+*/
+
+.hero {
+  margin: 5rem 0;
+}
+
+.about {
+  margin: 15rem 0;
+}
+
 .skills {
   display: flex;
   flex-direction: row;
@@ -72,8 +129,12 @@ a {
   padding: 2rem 0;
 }
 
+.cards--wide .card {
+  width: 31%;
+}
+
 .card {
-  width: 25rem;
+  width: 20%;
   padding: 2rem 4rem;
   border-radius: 1rem;
   background-color: #defafa;
@@ -84,6 +145,7 @@ a {
   height: 19rem;
   object-fit: cover;
   border-radius: 1rem;
+  width: 100%;
 }
 
 .icon {
@@ -95,28 +157,40 @@ a {
   box-shadow: 0 2px 2px 0 rgba(138, 138, 138, 0.2), 0 2px 3px 0 rgba(138, 138, 138, 0.2);
 }
 
-button {
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  border: none;
-  color: #1A1D88;
-  font-weight: 600;
-  background-color: #CFEBF6;
-}
-
-footer {
-  background-color: #1A1D88;
-  color: #fff;
-  padding: 6rem; 
-}
-
 .small {
   font-size: 1.2rem;
   line-height: 2rem;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.small a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero .image-container {
+  margin-right: 8rem;
+}
+
+.hero .image-container img {
+  border-radius: 1rem;
+}
+
+.github-card {
+  padding: 0 1rem;
+  width: 25% !important;
+}
+
+.top {
+  width: 4rem;
+  position: sticky;
+  bottom: 0;
+  left: 90vw;
+}
+
+a .icon {
+  margin: 0.5rem -2rem;
 }
