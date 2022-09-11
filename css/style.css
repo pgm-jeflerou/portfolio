@@ -94,6 +94,10 @@ footer {
   width: 12rem;
 }
 
+.image-container--wide {
+  width: 75% !important;
+}
+
 .image-container img {
   width: 100%;
   height: auto;
@@ -126,7 +130,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 0;
+  flex-wrap: wrap;
+  padding: 2rem 0
 }
 
 .cards--wide .card {
@@ -134,16 +139,13 @@ footer {
 }
 
 .card {
-  width: 20%;
+  width: 50%;
   padding: 2rem 4rem;
   border-radius: 1rem;
   background-color: #defafa;
 }
 
 .img-card {
-  width: 19rem;
-  height: 19rem;
-  object-fit: cover;
   border-radius: 1rem;
   width: 100%;
 }
@@ -181,17 +183,21 @@ footer {
 
 .github-card {
   padding: 0 1rem;
-  width: 25% !important;
+  width: 50% !important;
+  margin-bottom: 2rem;
 }
 
 .top {
   width: 4rem;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   left: 90vw;
-  margin-top: -4.5rem;
 }
 
 a .icon {
   margin: 0.5rem -2rem;
+}
+
+.detail-info {
+  margin-bottom: 2rem;
 }
